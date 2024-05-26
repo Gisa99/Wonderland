@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: 'Nunito';
+  src: url(../src/assets/fonts/Nunito-VariableFont_wght.ttf) format('truetype');
+}
+
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+
+.h-custom {
+  height: 70px; 
+}
+.w-custom{
+  width: 50%
+}
+
+.w-chat{
+  width: 95%;
+}
+.textfield{
+  & .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #281740;
+  }
+  & .MuiInputLabel-outlined.Mui-focused {
+    color: #281740;
+  }
+}
+
+.scroll-container {
+  height: 300px; /* Altura da área com rolagem */
+  overflow-y: auto; /* Habilita a rolagem vertical */
+}
+
+.scroll-content {
+  padding: 0; /* Remova o padding padrão da lista */
+  margin: 0; /* Remova a margem padrão da lista */
+  list-style: none; /* Remova os marcadores de lista padrão */
+}
+
+/* Estilize a scrollbar */
+.scroll-container::-webkit-scrollbar {
+  width: 6px; /* Largura da scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da track */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888; /* Cor do thumb */
+  border-radius: 3px; /* Arredonde os cantos do thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor do thumb ao passar o mouse */
+}
+
